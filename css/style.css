@@ -12,7 +12,7 @@
   --font-zh: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", sans-serif;
   --font-en: "Segoe UI", system-ui, -apple-system, sans-serif;
   --max-width: 1200px;
-  --nav-height: 64px;
+  --nav-height: 72px;
 }
 
 /* === 全局重置 === */
@@ -84,10 +84,10 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
   gap: 10px;
 }
 
-.nav-logo img { height: 40px; }
+.nav-logo img { height: 50px; }
 
 .nav-logo span {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: bold;
   color: var(--color-primary);
 }
