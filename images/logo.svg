@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="72" viewBox="0 0 300 72">
+  <defs>
+    <linearGradient id="sunGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FF8F00"/>
+      <stop offset="100%" stop-color="#E65100"/>
+    </linearGradient>
+  </defs>
+  <!-- 地平线 -->
+  <rect x="30" y="52" width="50" height="2" rx="1" fill="#1A237E" opacity="0.5"/>
+  <!-- 太阳 -->
+  <circle cx="55" cy="44" r="14" fill="url(#sunGrad)" opacity="0.92"/>
+  <!-- 三道光芒 -->
+  <line x1="55" y1="28" x2="55" y2="23" stroke="#FF8F00" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="66" y1="32" x2="70" y2="28" stroke="#FF8F00" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="44" y1="32" x2="40" y2="28" stroke="#FF8F00" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- 公司名 -->
+  <text x="82" y="36" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="22" font-weight="900" fill="#1A237E">星旭新能源</text>
+  <text x="85" y="54" font-family="Segoe UI, system-ui, sans-serif" font-size="10" fill="#666666" letter-spacing="2">XINGXU NEW ENERGY</text>
+</svg>
