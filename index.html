@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="西安星旭新能源科技有限公司 — 新能源仿真模型库、教学培训系统、技术咨询服务">
+  <meta name="description" content="西安星旭新能源科技有限公司 — 仿真模型库、教学培训系统、技术咨询服务">
   <title>星旭新能源 — 新能源仿真技术引领者</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
@@ -11,28 +11,46 @@
 <body>
 
 <nav class="navbar">
-  <div class="container">
+  <div class="nav-inner">
     <a href="index.html" class="nav-logo">
       <img src="images/logo.svg" alt="星旭新能源">
     </a>
-    <button class="nav-toggle" id="navToggle" aria-label="菜单">&#9776;</button>
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html" class="active">首页</a></li>
+      <li><a href="news.html">科技动态</a></li>
       <li><a href="products.html">产品服务</a></li>
       <li><a href="about.html">关于我们</a></li>
-      <li><a href="contact.html">联系我们</a></li>
     </ul>
+    <div class="nav-contact">
+      <a href="contact.html" class="btn btn-primary">联系我们</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="菜单">&#9776;</button>
   </div>
 </nav>
 
+<!-- 主图 + 轮播文字 -->
 <section class="hero">
   <div class="container">
-    <h1>新能源仿真技术引领者</h1>
-    <p>专注新能源 · 电力系统 · 氢能仿真研究与教学系统研发，为高校和能源企业提供高水平数字化解决方案</p>
-    <a href="contact.html" class="btn btn-primary">联系我们</a>
+    <div class="hero-carousel" id="heroCarousel">
+      <div class="hero-slide active">
+        <div class="art-text">仿真模型库</div>
+        <div class="art-divider"></div>
+        <div class="art-sub">SIMULATION MODEL LIBRARY</div>
+      </div>
+      <div class="hero-slide">
+        <div class="art-text">教学培训系统</div>
+        <div class="art-divider"></div>
+        <div class="art-sub">TEACHING & TRAINING SYSTEM</div>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-dots" id="carouselDots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
   </div>
 </section>
 
+<!-- 核心业务 -->
 <section class="section">
   <div class="container">
     <div class="section-title">
@@ -59,7 +77,8 @@
   </div>
 </section>
 
-<section class="section" style="background: var(--color-white);">
+<!-- 领域覆盖 -->
+<section class="section" style="background: #fff;">
   <div class="container">
     <div class="section-title">
       <h2>覆盖领域</h2>

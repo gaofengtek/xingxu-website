@@ -1,12 +1,32 @@
-// 移动端导航菜单切换
 document.addEventListener('DOMContentLoaded', function () {
+
+  // 移动端导航菜单切换
   var toggle = document.getElementById('navToggle');
   var links = document.getElementById('navLinks');
-
   if (toggle && links) {
     toggle.addEventListener('click', function () {
       links.classList.toggle('open');
     });
+  }
+
+  // 首页 Hero 轮播
+  var slides = document.querySelectorAll('.hero-slide');
+  var dots = document.querySelectorAll('.carousel-dots .dot');
+  if (slides.length && dots.length) {
+    var current = 0;
+    var total = slides.length;
+
+    function showSlide(index) {
+      slides[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      current = index;
+      slides[current].classList.add('active');
+      dots[current].classList.add('active');
+    }
+
+    setInterval(function () {
+      showSlide((current + 1) % total);
+    }, 3000);
   }
 
   // 联系我们表单验证与提交
