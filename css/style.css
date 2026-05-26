@@ -267,6 +267,19 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
   margin: 0 auto 32px;
 }
 
+/* === 联系页双栏 === */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
 /* === 工具类 === */
 .text-center { text-align: center; }
 .mt-20 { margin-top: 20px; }
