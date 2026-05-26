@@ -248,26 +248,30 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
 
 /* === Hero 区 === */
 .hero {
-  background: linear-gradient(135deg, rgba(26,35,126,0.75) 0%, rgba(40,53,147,0.7) 100%),
-              url('../images/hero-bg.jpg') center/cover no-repeat;
+  background: url('../images/hero-bg.jpg') center/cover no-repeat;
   color: var(--color-white);
   text-align: center;
-  padding: 120px 0 100px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
 }
 
 .hero h1 {
   color: var(--color-white);
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   margin-bottom: 16px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  text-shadow: 0 2px 12px rgba(0,0,0,0.6);
 }
 
 .hero p {
-  color: rgba(255,255,255,0.9);
-  font-size: 1.1rem;
+  color: #ffffff;
+  font-size: 1.15rem;
   max-width: 600px;
   margin: 0 auto 32px;
-  text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+  text-shadow: 0 1px 8px rgba(0,0,0,0.5);
 }
 
 /* === 联系页双栏 === */
