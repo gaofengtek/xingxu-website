@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="联系星旭新能源 — 商务合作与技术咨询">
+  <title>联系我们 — 星旭新能源</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.svg" alt="星旭新能源">
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="菜单">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="products.html">产品服务</a></li>
+      <li><a href="about.html">关于我们</a></li>
+      <li><a href="contact.html" class="active">联系我们</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero" style="padding: 60px 0;">
+  <div class="container">
+    <h1>联系我们</h1>
+    <p>期待与您的合作</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; max-width: 900px; margin: 0 auto;">
+
+      <div style="background: var(--color-white); border-radius: 8px; padding: 32px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+        <h3 style="margin-bottom: 20px;">公司信息</h3>
+        <div style="margin-bottom: 16px;">
+          <strong>公司名称</strong>
+          <p style="margin-top: 4px;">西安星旭新能源科技有限公司</p>
+        </div>
+        <div style="margin-bottom: 16px;">
+          <strong>地址</strong>
+          <p style="margin-top: 4px;">陕西省西安市未央区北辰路<br>绿地创海大厦2208-V378室</p>
+        </div>
+        <div style="margin-bottom: 16px;">
+          <strong>统一社会信用代码</strong>
+          <p style="margin-top: 4px; font-family: var(--font-en);">91610112MAKCD78PXF</p>
+        </div>
+      </div>
+
+      <div style="background: var(--color-white); border-radius: 8px; padding: 32px; box-shadow: 0 2px 12px rgba(0,0,0,0.06);">
+        <h3 style="margin-bottom: 20px;">在线留言</h3>
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">姓名 <span style="color: #D32F2F;">*</span></label>
+            <input type="text" id="name" name="name" required placeholder="请输入您的姓名">
+            <span class="form-error" id="nameError">请输入姓名</span>
+          </div>
+          <div class="form-group">
+            <label for="email">邮箱 <span style="color: #D32F2F;">*</span></label>
+            <input type="email" id="email" name="email" required placeholder="请输入您的邮箱">
+            <span class="form-error" id="emailError">请输入有效的邮箱地址</span>
+          </div>
+          <div class="form-group">
+            <label for="phone">电话</label>
+            <input type="tel" id="phone" name="phone" placeholder="请输入您的电话（选填）">
+          </div>
+          <div class="form-group">
+            <label for="message">留言内容 <span style="color: #D32F2F;">*</span></label>
+            <textarea id="message" name="message" required placeholder="请输入您想了解的内容..."></textarea>
+            <span class="form-error" id="messageError">请输入留言内容</span>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">提交留言</button>
+        </form>
+        <p id="formSuccess" style="display: none; color: #2E7D32; text-align: center; margin-top: 16px;">&#10004; 留言已提交，我们会尽快与您联系！</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2026 西安星旭新能源科技有限公司</p>
+    <p class="beian">
+      <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">陕ICP备XXXXXXXX号</a>
+      &nbsp;|&nbsp;
+      陕公网安备 XXXXXXXXXXXX号
+    </p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
