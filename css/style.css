@@ -270,54 +270,6 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
   background: url('../images/hero-bg3.jpg') center/cover no-repeat;
   height: calc(100vh - var(--nav-height) - 60px);
   min-height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.4);
-}
-
-.hero-overlay {
-  position: relative;
-  z-index: 1;
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 40px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
-  text-align: center;
-}
-
-.hero-item .hero-title {
-  font-family: 'STKaiti', 'KaiTi', '楷体', 'SimSun', serif;
-  font-size: 2rem;
-  font-weight: bold;
-  background: linear-gradient(180deg, #FFD54F 0%, #FF8F00 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  letter-spacing: 3px;
-  margin-bottom: 14px;
-}
-
-.hero-item .hero-desc {
-  color: rgba(255,255,255,0.88);
-  font-size: 0.9rem;
-  line-height: 1.8;
-  text-shadow: 0 1px 4px rgba(0,0,0,0.3);
-}
-
-@media (max-width: 768px) {
-  .hero-overlay { grid-template-columns: 1fr; gap: 24px; }
-  .hero-item .hero-title { font-size: 1.5rem; }
-  .hero-item .hero-desc { font-size: 0.8rem; }
 }
 
 /* 轮播文字 */
