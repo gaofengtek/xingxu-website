@@ -267,8 +267,7 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
 
 /* === Hero 区 === */
 .hero {
-  background: url('../images/hero-main.jpg') center/contain no-repeat;
-  background-color: #0a0f2a;
+  background: url('../images/hero-main.jpg') center/cover no-repeat;
   height: calc(100vh - var(--nav-height) - 60px);
   min-height: 400px;
   display: flex;
@@ -283,6 +282,7 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
   border-radius: 8px;
   padding: 28px 24px;
   max-width: 340px;
+  margin-left: 40px;
   border: 1px solid rgba(255,255,255,0.2);
 }
 
