@@ -9,26 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // 首页 Hero 轮播
-  var slides = document.querySelectorAll('.hero-slide');
-  var dots = document.querySelectorAll('.carousel-dots .dot');
-  if (slides.length && dots.length) {
-    var current = 0;
-    var total = slides.length;
-
-    function showSlide(index) {
-      slides[current].classList.remove('active');
-      dots[current].classList.remove('active');
-      current = index;
-      slides[current].classList.add('active');
-      dots[current].classList.add('active');
-    }
-
-    setInterval(function () {
-      showSlide((current + 1) % total);
-    }, 3000);
-  }
-
   // 联系我们表单验证与提交
   var form = document.getElementById('contactForm');
   if (form) {
