@@ -267,7 +267,7 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
 
 /* === Hero 区 === */
 .hero {
-  background: url('../images/hero-main.jpg') center/cover no-repeat;
+  background: url('../images/hero-main.webp') center/cover no-repeat;
   height: calc(100vh - var(--nav-height) - 60px);
   min-height: 400px;
   display: flex;
