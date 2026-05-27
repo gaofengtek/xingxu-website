@@ -74,7 +74,7 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
 .nav-inner {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 120px 0 80px;
+  padding: 0 80px 0 20px;
   display: flex;
   align-items: center;
   height: 100%;
