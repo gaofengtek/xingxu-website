@@ -271,6 +271,39 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
   background-color: #0a0f2a;
   height: calc(100vh - var(--nav-height) - 60px);
   min-height: 400px;
+  display: flex;
+  align-items: center;
+  padding: 0 80px;
+}
+
+/* 左侧悬浮框 */
+.hero-float-box {
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(6px);
+  border-radius: 8px;
+  padding: 28px 24px;
+  max-width: 340px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.hero-float-box .float-title {
+  font-family: 'STKaiti', 'KaiTi', '楷体', serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #FFD54F;
+  margin-bottom: 12px;
+  letter-spacing: 2px;
+}
+
+.hero-float-box .float-desc {
+  color: rgba(255,255,255,0.9);
+  font-size: 0.85rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .hero { padding: 0 20px; }
+  .hero-float-box { max-width: 100%; }
 }
 
 /* 轮播文字 */
