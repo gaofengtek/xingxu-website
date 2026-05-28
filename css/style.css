@@ -386,6 +386,57 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
 .product-section { max-width: 900px; }
 .product-section .card-white h2 { color: var(--color-accent); font-size: 1.4rem; margin-bottom: 16px; }
 
+/* === 科技动态三栏 === */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.news-col {
+  background: var(--color-white);
+  border-radius: 8px;
+  padding: 28px 24px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.news-col h2 {
+  font-size: 1.15rem;
+  padding-bottom: 14px;
+  margin-bottom: 18px;
+  border-bottom: 2px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.news-col h2 .col-icon { font-size: 1.3rem; }
+
+.news-list {
+  list-style: none;
+  padding: 0;
+}
+
+.news-list li {
+  padding: 12px 0;
+  border-bottom: 1px dashed var(--color-border);
+  color: var(--color-text-light);
+  font-size: 0.9rem;
+}
+
+.news-list li:last-child { border-bottom: none; }
+
+.news-empty {
+  text-align: center;
+  color: #bbb;
+  padding: 40px 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .news-grid { grid-template-columns: 1fr; }
+}
+
 /* === 工具类 === */
 .text-center { text-align: center; }
 .mt-20 { margin-top: 20px; }
