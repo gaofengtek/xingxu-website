@@ -267,42 +267,12 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
 
 /* === Hero 区 === */
 .hero {
+  background: url('../images/hero-main.webp') center/cover no-repeat;
   height: calc(100vh - var(--nav-height) - 60px);
   min-height: 400px;
   display: flex;
   align-items: center;
   padding: 0 80px;
-  overflow: hidden;
-  position: relative;
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  background: url('../images/hero-main.webp') center/cover no-repeat;
-  animation: kenburns 6s ease-out forwards, fadein 2s ease-out;
-}
-
-/* 底部藏蓝渐变遮罩 */
-.hero::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: linear-gradient(to top, rgba(26,35,126,0.6) 0%, transparent 50%);
-  pointer-events: none;
-}
-
-@keyframes kenburns {
-  from { transform: scale(1); }
-  to   { transform: scale(1.05); }
-}
-
-@keyframes fadein {
-  from { filter: brightness(0.6); }
-  to   { filter: brightness(1); }
 }
 
 @media (max-width: 768px) {
