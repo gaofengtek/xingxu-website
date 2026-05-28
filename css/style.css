@@ -70,7 +70,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* === 导航透明模式 === */
 .navbar.transparent {
-  background: transparent;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), transparent);
   border-bottom-color: transparent;
 }
 .navbar.transparent .nav-links a { color: #fff; }
