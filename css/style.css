@@ -375,96 +375,153 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
 .product-section { max-width: 900px; }
 .product-section .card-white h2 { color: var(--color-accent); font-size: 1.4rem; margin-bottom: 16px; }
 
-/* === 科技动态三栏 === */
+/* === 科技动态三栏（Dark Glassmorphism + Bento） === */
 .news-section {
-  background: #fff;
+  background: linear-gradient(180deg, #F5F7FA 0%, #EEF1F6 100%);
+  position: relative;
+  overflow: hidden;
 }
 
 .news-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  gap: 28px;
+  position: relative;
+  z-index: 1;
 }
 
 .news-col {
   background: #fff;
-  border: 1px solid #E8EAED;
-  border-radius: 6px;
-  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(26,35,126,0.05);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .news-col:hover {
-  border-color: #D0D4DD;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(26,35,126,0.1);
 }
 
-/* 栏目标题区 */
 .news-col-header {
-  padding: 32px 28px 0;
-  margin-bottom: 8px;
+  padding: 28px 28px 18px;
+  position: relative;
+  overflow: hidden;
 }
 
-.news-col-header h2 {
-  font-size: 1rem;
+/* 卡片顶部渐变横线 */
+.news-col-header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+}
+
+.news-col:nth-child(1) .news-col-header::after { background: linear-gradient(90deg, var(--color-primary), #5C6BC0); }
+.news-col:nth-child(2) .news-col-header::after { background: linear-gradient(90deg, var(--color-accent), #FFB74D); }
+.news-col:nth-child(3) .news-col-header::after { background: linear-gradient(90deg, #00796B, #4DB6AC); }
+
+.news-col h2 {
+  font-size: 1.05rem;
   font-weight: 700;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  margin-bottom: 0;
   color: var(--color-primary);
-  padding-bottom: 16px;
-  border-bottom: 1px solid #E8EAED;
 }
 
-/* 彩色圆点标记 */
-.news-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
+.col-icon-wrap {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: #fff;
   flex-shrink: 0;
 }
-.news-dot.blue  { background: var(--color-primary); }
-.news-dot.gold  { background: var(--color-accent); }
-.news-dot.green { background: #00897B; }
+
+.news-col:nth-child(1) .col-icon-wrap { background: linear-gradient(135deg, #3949AB, var(--color-primary)); }
+.news-col:nth-child(2) .col-icon-wrap { background: linear-gradient(135deg, #FF8F00, #E65100); }
+.news-col:nth-child(3) .col-icon-wrap { background: linear-gradient(135deg, #00897B, #00695C); }
 
 .news-list {
   list-style: none;
-  padding: 8px 28px 28px;
+  padding: 0 28px 24px;
 }
 
 .news-list li {
-  padding: 18px 0;
+  padding: 18px 0 18px 22px;
+  border-left: 2px solid var(--color-border);
+  position: relative;
+  transition: border-color 0.3s ease;
 }
 
-.news-list li + li {
-  border-top: 1px solid #F0F1F4;
+.news-list li:hover {
+  border-left-color: var(--color-primary-light);
 }
+
+.news-list li::before {
+  content: '';
+  position: absolute;
+  left: -5.5px;
+  top: 24px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--color-border);
+  transition: all 0.3s ease;
+}
+
+.news-list li:hover::before {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 8px rgba(255,143,0,0.3);
+}
+
+.news-col:nth-child(3) .news-list li:hover::before {
+  border-color: #00897B;
+  box-shadow: 0 0 8px rgba(0,137,123,0.3);
+}
+
+.news-list li:last-child { border-left-color: transparent; }
 
 .news-date {
-  font-size: 0.72rem;
-  color: #999;
-  margin-bottom: 6px;
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: var(--color-accent);
+  margin-bottom: 8px;
 }
 
 .news-item-title {
-  font-weight: 600;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 6px;
   font-size: 0.92rem;
   line-height: 1.5;
-  margin-bottom: 6px;
-  color: var(--color-text);
 }
 
 .news-item-title a {
   color: var(--color-text);
-  transition: color 0.2s;
+  background: linear-gradient(var(--color-primary), var(--color-primary)) left bottom / 0% 1px no-repeat;
+  transition: background-size 0.35s ease, color 0.2s;
 }
 .news-item-title a:hover {
   color: var(--color-primary);
+  background-size: 100% 1px;
 }
 
 .news-item-desc {
-  color: #999;
+  color: var(--color-text-light);
   font-size: 0.82rem;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
 .news-empty {
