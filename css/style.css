@@ -421,9 +421,33 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
   border-radius: 50%;
   flex-shrink: 0;
 }
-.news-dot.l1 { background: #43A047; }
+.news-dot.l1 { background: var(--color-primary); }
 .news-dot.l2 { background: #66BB6A; }
 .news-dot.l3 { background: #81C784; }
+
+/* 第一栏蓝色主题 */
+.news-col:nth-child(1) {
+  border-color: #C5CAE9;
+  box-shadow: 0 2px 12px rgba(26,35,126,0.05);
+}
+.news-col:nth-child(1):hover {
+  box-shadow: 0 8px 28px rgba(26,35,126,0.1);
+}
+.news-col:nth-child(1) .news-col-header h2 {
+  color: var(--color-primary);
+}
+.news-col:nth-child(1) .news-col-header h2 {
+  border-bottom-color: #E8EAF6;
+}
+.news-col:nth-child(1) .news-list li + li {
+  border-top-color: #E8EAF6;
+}
+.news-col:nth-child(1) .news-date {
+  color: #7986CB;
+}
+.news-col:nth-child(1) .news-item-title a:hover {
+  color: var(--color-primary);
+}
 
 .news-list {
   list-style: none;
