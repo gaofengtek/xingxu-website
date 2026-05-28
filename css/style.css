@@ -276,12 +276,13 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
   position: relative;
 }
 
-.hero::before {
-  content: '';
+.hero-video {
   position: absolute;
   inset: 0;
   z-index: 0;
-  background: url('../images/hero-main.webp') center/cover no-repeat;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   animation: kenburns 6s ease-out forwards, fadein 2s ease-out;
 }
 
