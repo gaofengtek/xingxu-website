@@ -59,4 +59,23 @@ document.addEventListener('DOMContentLoaded', function () {
       errors[i].style.display = 'none';
     }
   }
+
+  // 导航栏透明→实色切换
+  var navbar = document.querySelector('.navbar');
+  var hero = document.querySelector('.hero');
+  if (navbar && hero) {
+    var heroBottom = hero.offsetTop + hero.offsetHeight - navbar.offsetHeight;
+    function updateNav() {
+      if (window.scrollY > heroBottom) {
+        navbar.classList.add('solid');
+        navbar.classList.remove('transparent');
+      } else {
+        navbar.classList.add('transparent');
+        navbar.classList.remove('solid');
+      }
+    }
+    navbar.classList.add('transparent');
+    updateNav();
+    window.addEventListener('scroll', updateNav, { passive: true });
+  }
 });
