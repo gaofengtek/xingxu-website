@@ -625,9 +625,9 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
 }
 
 .news-tag {
-  font-size: 0.72rem;
+  font-size: 0.85rem;
   font-weight: 700;
-  padding: 4px 12px;
+  padding: 5px 16px;
   border-radius: 3px;
   color: #fff;
   text-transform: uppercase;
