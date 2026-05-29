@@ -593,7 +593,7 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
 }
 
 .news-col {
-  background: #e4f9b0;
+  background: #d3fb90;
   border-radius: var(--radius-md);
   overflow: visible;
   box-shadow: var(--shadow-sm);
@@ -753,7 +753,7 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
   transition: background var(--transition-fast);
 }
 .product-item:last-child { border-bottom: none; }
-.product-item:hover { background: #f0ffcc; }
+.product-item:hover { background: #e6ffb0; }
 .product-item strong { color: #1a1a2e; font-size: 0.9rem; }
 .product-item small { color: var(--color-text-light); font-size: 0.78rem; }
 
