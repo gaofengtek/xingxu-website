@@ -17,19 +17,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
       var valid = true;
       var name = document.getElementById('name');
-      var phone = document.getElementById('phone');
       var message = document.getElementById('message');
 
       clearErrors();
 
       if (!name.value.trim()) {
         showError('nameError', '请输入姓名');
-        valid = false;
-      }
-
-      var phonePattern = /^1[3-9]\d{9}$/;
-      if (!phone.value.trim() || !phonePattern.test(phone.value.trim())) {
-        showError('phoneError', '请输入有效的手机号码');
         valid = false;
       }
 
