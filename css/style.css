@@ -609,18 +609,15 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
   box-shadow: var(--shadow-lg);
 }
 
-.news-col-header {
-  padding: 24px 24px 0;
+.news-subtitle {
+  font-size: 0.82rem;
+  color: var(--color-text-light);
+  margin-top: 6px;
+  font-weight: 400;
 }
 
-.news-col-header h2 {
-  font-size: 1.15rem;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--color-primary);
-  padding-bottom: 12px;
+.news-col-header {
+  padding: 24px 24px 12px;
   border-bottom: 1px solid var(--color-border);
 }
 
