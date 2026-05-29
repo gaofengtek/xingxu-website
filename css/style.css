@@ -429,40 +429,38 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
 
 /* === 子页面 Hero === */
 .hero-sub {
-  background: linear-gradient(160deg, #0a1628 0%, #1A237E 40%, #0d1b2a 100%);
-  color: var(--color-white);
+  background: #fff;
   text-align: center;
-  padding: 72px 0;
+  padding: 56px 0 48px;
   position: relative;
-  overflow: hidden;
-}
-.hero-sub::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    repeating-linear-gradient(45deg, transparent, transparent 30px, rgba(255,143,0,0.03) 30px, rgba(255,143,0,0.03) 31px),
-    repeating-linear-gradient(-45deg, transparent, transparent 60px, rgba(255,255,255,0.02) 60px, rgba(255,255,255,0.02) 61px),
-    radial-gradient(ellipse at 30% 50%, rgba(255,143,0,0.1) 0%, transparent 50%),
-    radial-gradient(ellipse at 70% 50%, rgba(26,35,126,0.4) 0%, transparent 50%);
-  pointer-events: none;
+  border-bottom: 1px solid var(--color-border);
 }
 .hero-sub::after {
   content: '';
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, transparent 10%, var(--color-accent) 50%, transparent 90%);
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: var(--color-accent);
+  border-radius: 2px;
 }
 .hero-sub h1 {
-  color: #fff;
-  font-size: 2.2rem;
-  position: relative;
-  text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+  color: var(--color-primary);
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
 }
-.hero-sub p { color: rgba(255,255,255,0.65); font-size: 1.05rem; max-width: 600px; margin: 8px auto 0; position: relative; }
+.hero-sub h1 span {
+  color: var(--color-accent);
+}
+.hero-sub p {
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+  max-width: 600px;
+  margin: 6px auto 0;
+}
 
 /* === 白底卡片 === */
 .card-white {
