@@ -581,7 +581,7 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
 
 /* === 科技动态 — 暗底+非对称网格+金色标签 === */
 .news-section {
-  background: #1a1f3a;
+  background: linear-gradient(180deg, #eef2ff 0%, #e1ecff 100%);
   padding: 60px 0;
 }
 
@@ -737,7 +737,7 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
 
 .news-empty {
   text-align: center;
-  color: rgba(255,255,255,0.3);
+  color: #aaa;
   padding: 40px 0;
   font-size: 0.85rem;
 }
