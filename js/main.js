@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       var valid = true;
       var name = document.getElementById('name');
-      var email = document.getElementById('email');
+      var phone = document.getElementById('phone');
       var message = document.getElementById('message');
 
       clearErrors();
@@ -27,9 +27,9 @@ document.addEventListener('DOMContentLoaded', function () {
         valid = false;
       }
 
-      var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!email.value.trim() || !emailPattern.test(email.value.trim())) {
-        showError('emailError', '请输入有效的邮箱地址');
+      var phonePattern = /^1[3-9]\d{9}$/;
+      if (!phone.value.trim() || !phonePattern.test(phone.value.trim())) {
+        showError('phoneError', '请输入有效的手机号码');
         valid = false;
       }
 
