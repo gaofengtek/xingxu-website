@@ -614,22 +614,20 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
 }
 
 .news-col-header h2 {
-  font-size: 0.9rem;
+  font-size: 1.15rem;
   font-weight: 700;
   display: flex;
   align-items: center;
   gap: 8px;
-  color: var(--color-text);
+  color: var(--color-primary);
   padding-bottom: 12px;
   border-bottom: 1px solid var(--color-border);
-  text-transform: uppercase;
-  letter-spacing: 1px;
 }
 
 .news-tag {
-  font-size: 0.65rem;
+  font-size: 0.72rem;
   font-weight: 700;
-  padding: 3px 10px;
+  padding: 4px 12px;
   border-radius: 3px;
   color: #fff;
   text-transform: uppercase;
@@ -655,7 +653,7 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
 }
 
 .news-date {
-  font-size: 0.7rem;
+  font-size: 0.78rem;
   color: var(--color-accent);
   font-weight: 600;
   margin-bottom: 4px;
@@ -664,7 +662,7 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
 
 .news-item-title {
   font-weight: 600;
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   line-height: 1.5;
   margin-bottom: 4px;
   color: var(--color-text);
@@ -680,7 +678,7 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
 
 .news-item-desc {
   color: var(--color-text-light);
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   line-height: 1.6;
 }
 
