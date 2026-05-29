@@ -706,6 +706,35 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
   line-height: 1.6;
 }
 
+.news-more {
+  padding: 0 24px 20px;
+  text-align: center;
+}
+.news-more a {
+  font-size: 0.82rem;
+  color: #2774fd;
+  font-weight: 600;
+  transition: color var(--transition-fast);
+}
+.news-more a:hover { color: #6859fe; }
+
+/* 新闻列表页 */
+.news-list-page {
+  background: #fff;
+  border-radius: var(--radius-md);
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+}
+.news-list-item {
+  padding: 20px 0;
+}
+.news-list-item + .news-list-item {
+  border-top: 1px solid var(--color-border);
+}
+.news-list-item .news-date { margin-bottom: 6px; }
+.news-list-item .news-item-title { font-size: 1.05rem; margin-bottom: 6px; }
+.news-list-item .news-item-desc { font-size: 0.88rem; }
+
 .news-empty {
   text-align: center;
   color: rgba(255,255,255,0.3);
