@@ -155,23 +155,24 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* === 页脚 === */
 .footer-new {
-  background: linear-gradient(180deg, #283593 0%, #3949AB 100%);
-  color: rgba(255,255,255,0.7);
+  background: #f0f2f5;
+  color: var(--color-text-light);
   padding: 48px 0 24px;
   font-size: 0.9rem;
+  border-top: 1px solid var(--color-border);
 }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 32px; }
-.footer-grid h4 { color: #fff; font-size: 1rem; margin-bottom: 14px; }
-.footer-grid p { font-size: 0.9rem; line-height: 1.8; }
-.footer-grid a { color: rgba(255,255,255,0.5); transition: color 0.2s; }
+.footer-grid h4 { color: #1a1a2e; font-size: 1rem; margin-bottom: 14px; }
+.footer-grid p { font-size: 0.9rem; line-height: 1.8; color: var(--color-text-light); }
+.footer-grid a { color: var(--color-text-light); transition: color 0.2s; }
 .footer-grid a:hover { color: #2774fd; }
 .footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid var(--color-border);
   margin-top: 32px;
   padding-top: 16px;
   text-align: center;
   font-size: 0.72rem;
-  color: rgba(255,255,255,0.35);
+  color: #aaa;
 }
 
 .container {
