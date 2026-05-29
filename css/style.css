@@ -593,7 +593,7 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
 }
 
 .news-col {
-  background: #f0f7f0;
+  background: #e2f0e2;
   border-radius: var(--radius-md);
   overflow: visible;
   box-shadow: var(--shadow-sm);
