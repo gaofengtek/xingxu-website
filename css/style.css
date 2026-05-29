@@ -38,7 +38,7 @@ html { scroll-behavior: smooth; }
 body {
   font-family: var(--font-zh);
   color: var(--color-text);
-  background: var(--color-bg);
+  background: #f9f7f4;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -112,7 +112,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* === 数据亮点区 === */
 .stats-section {
-  background: linear-gradient(135deg, var(--color-primary) 0%, #0d1b2a 100%);
+  background: linear-gradient(135deg, #1a1a2e 0%, #1A237E 50%, #0d1b2a 100%);
   padding: 48px 0;
 }
 .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center; }
@@ -189,6 +189,17 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
 .section {
   padding: 60px 0;
 }
+.section-warm {
+  padding: 60px 0;
+  background: linear-gradient(180deg, #f5f0e8 0%, #f9f7f4 100%);
+}
+.section-dark {
+  padding: 60px 0;
+  background: #0d1b2a;
+  color: rgba(255,255,255,0.8);
+}
+.section-dark h2 { color: #fff; }
+.section-dark p { color: rgba(255,255,255,0.6); }
 
 .section-title {
   text-align: center;
@@ -429,11 +440,20 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
 
 /* === 子页面 Hero === */
 .hero-sub {
-  background: #fff;
+  background: linear-gradient(160deg, #f8f5f0 0%, #f0ece6 40%, #e8e2d8 100%);
   text-align: center;
   padding: 56px 0 48px;
   position: relative;
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid #e0d8cc;
+}
+.hero-sub::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #FF8F00, var(--color-primary), #FF8F00, transparent);
 }
 .hero-sub::after {
   content: '';
@@ -443,20 +463,17 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
   transform: translateX(-50%);
   width: 80px;
   height: 3px;
-  background: var(--color-accent);
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
   border-radius: 2px;
 }
 .hero-sub h1 {
-  color: var(--color-primary);
+  color: #1a1a2e;
   font-size: 2rem;
   font-weight: 800;
   letter-spacing: 2px;
 }
-.hero-sub h1 span {
-  color: var(--color-accent);
-}
 .hero-sub p {
-  color: var(--color-text-light);
+  color: #8a8078;
   font-size: 0.95rem;
   max-width: 600px;
   margin: 6px auto 0;
