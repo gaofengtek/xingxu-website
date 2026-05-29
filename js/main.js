@@ -17,12 +17,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
       var valid = true;
       var name = document.getElementById('name');
+      var phone = document.getElementById('phone');
       var message = document.getElementById('message');
 
       clearErrors();
 
       if (!name.value.trim()) {
         showError('nameError', '请输入姓名');
+        valid = false;
+      }
+
+      if (!phone.value.trim()) {
+        showError('phoneError', '请输入电话');
         valid = false;
       }
 
