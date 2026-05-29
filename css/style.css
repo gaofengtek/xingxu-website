@@ -90,11 +90,13 @@ img { max-width: 100%; height: auto; display: block; }
 /* === 场景卡片 === */
 .scene-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 .scene-card {
-  background: var(--color-white);
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0,0,0,0.04);
   border-radius: var(--radius-md);
   padding: 32px 24px;
   text-align: center;
-  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), background var(--transition-smooth);
   position: relative;
   overflow: hidden;
 }
@@ -107,7 +109,7 @@ img { max-width: 100%; height: auto; display: block; }
 .scene-card.s1::before { background: var(--color-primary); }
 .scene-card.s2::before { background: var(--color-accent); }
 .scene-card.s3::before { background: var(--color-primary-light); }
-.scene-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
+.scene-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); background: rgba(255,255,255,0.85); }
 .scene-icon { font-size: 2.2rem; margin-bottom: 12px; }
 
 /* === 数据亮点区 === */
@@ -338,17 +340,20 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
 }
 
 .card {
-  background: var(--color-white);
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(8px);
   border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.04);
   padding: 32px 24px;
   text-align: center;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
 }
 
 .card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  background: rgba(255,255,255,0.85);
 }
 
 .card-icon {
@@ -483,18 +488,21 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
 
 /* === 白底卡片 === */
 .card-white {
-  background: var(--color-white);
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(0,0,0,0.04);
   border-radius: var(--radius-md);
   padding: 40px;
   margin-bottom: 32px;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.03);
   border-left: 4px solid var(--color-border);
-  transition: border-color var(--transition-smooth), box-shadow var(--transition-smooth), transform var(--transition-smooth);
+  transition: border-color var(--transition-smooth), box-shadow var(--transition-smooth), transform var(--transition-smooth), background var(--transition-smooth);
 }
 .card-white:hover {
   border-left-color: #2774fd;
   box-shadow: var(--shadow-md);
   transform: translateY(-2px);
+  background: rgba(255,255,255,0.85);
 }
 .card-white h2 { margin-bottom: 20px; }
 
@@ -594,11 +602,13 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
 }
 
 .news-col {
-  background: #e8f4ec;
+  background: rgba(232,244,236,0.55);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(0,0,0,0.03);
   border-radius: var(--radius-md);
   overflow: visible;
-  box-shadow: var(--shadow-sm);
-  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth), background var(--transition-smooth);
   position: relative;
 }
 .news-col::before {
@@ -754,7 +764,7 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
   transition: background var(--transition-fast);
 }
 .product-item:last-child { border-bottom: none; }
-.product-item:hover { background: #f2faf6; }
+.product-item:hover { background: rgba(255,255,255,0.5); }
 .product-item strong { color: #1a1a2e; font-size: 0.9rem; }
 .product-item small { color: var(--color-text-light); font-size: 0.78rem; }
 
