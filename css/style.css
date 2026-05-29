@@ -407,7 +407,7 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
 
 /* === 子页面 Hero === */
 .hero-sub {
-  background: linear-gradient(135deg, var(--color-primary) 0%, #0d1b2a 100%);
+  background: linear-gradient(135deg, #1A237E 0%, #0d1b2a 100%);
   color: var(--color-white);
   text-align: center;
   padding: 72px 0;
@@ -419,9 +419,18 @@ p { margin-bottom: 12px; color: var(--color-text-light); }
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 20% 50%, rgba(255,143,0,0.08) 0%, transparent 50%),
-    radial-gradient(circle at 80% 50%, rgba(40,53,147,0.3) 0%, transparent 50%);
+    radial-gradient(circle at 25% 60%, rgba(255,143,0,0.15) 0%, transparent 40%),
+    radial-gradient(circle at 75% 40%, rgba(255,179,0,0.08) 0%, transparent 40%);
   pointer-events: none;
+}
+.hero-sub::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #FF8F00, transparent);
 }
 .hero-sub h1 { color: var(--color-white); font-size: 2.2rem; position: relative; }
 .hero-sub p { color: rgba(255,255,255,0.75); font-size: 1.05rem; max-width: 600px; margin: 8px auto 0; position: relative; }
